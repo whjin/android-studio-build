@@ -1,0 +1,7 @@
+<hbuilder debug="false" syncDebug="false">
+    <!-- 打正式包 <hbuilder>去掉 debug="true" syncDebug="true"，或者改为false -->
+    <!-- 打自定义基座 <hbuilder> 加上 debug="true" syncDebug="true"-->
+<apps>
+    <app appid="__UNI__EB8498C" appver=""/>
+</apps>
+</hbuilder>
