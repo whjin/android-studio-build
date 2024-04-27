@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.gksc.manager"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 2554
+        versionName "2.5.5.4"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a"  //使用uniapp时必须同时选择二者或选其一
+        }
+    }
+    packagingOptions {
+        merge 'lib/armeabi-v7a/libc++_shared.so'
+        merge 'lib/arm64-v8a/libc++_shared.so'
+    }
+    //生成自定义基座需要加
+    signingConfigs {
+        config {
+            keyAlias 'key'
+            keyPassword '111111'
+            storeFile file('manager.jks')
+            storePassword '111111'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        additionalParameters '--auto-add-overlay'
+        ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir "libs"
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.facebook.fresco:fresco:2.5.0'
+    implementation "com.facebook.fresco:animated-gif:2.5.0"
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.alibaba:fastjson:1.1.46.android'
+
+    // 基座需要，必须添加
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.alibaba:fastjson:1.1.46.android'
+    implementation 'com.github.nodemedia:nodemediaclient-android:2.9.7'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation fileTree(include: ['*.aar','*.jar'], dir: 'libs/component')
+    implementation fileTree(include: ['*.aar','*.jar'], dir: 'libs/finger')
+    implementation fileTree(include: ['*.aar','*.jar'], dir: 'libs/fvvPackage')
+    implementation fileTree(include: ['*.aar','*.jar'], dir: 'libs/sip')
+    implementation fileTree(include: ['*.aar','*.jar'], dir: 'libs/uni')
+    implementation fileTree(include: ['*.aar','*.jar'], dir: 'libs/extra')
+}
+

@@ -1,0 +1,3 @@
+仓内屏App Key:		97b21edb670095626c0d85288ddd18fc
+仓外屏App Key:		48438466e459c5ff5dcb1ccfc4348afa
+管控主机屏App Key:		056ed7b5bb1bc264e89ae490939c5e4a

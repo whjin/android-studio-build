@@ -1,0 +1,214 @@
+{
+  "nativePlugins": [
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "GK-Base",
+          "class": "com.gk.base.BaseModule"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "FingerprintModule",
+          "class": "com.kunlun.fingerprint.FingerprintModule"
+        },
+        {
+          "type": "module",
+          "name": "HarUtils",
+          "class": "com.kunlun.har.HarUtils"
+        },
+        {
+          "type": "module",
+          "name": "Utils",
+          "class": "com.kunlun.Utils"
+        }
+      ],
+      "integrateType": "aar",
+      "abis": [
+        "arm64-v8a"
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "component",
+          "name": "node-player",
+          "class": "com.gk.player.NodePlayer"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "component",
+          "name": "video-player",
+          "class": "com.gk.player.VideoPlayer"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "GK-UpdateApp",
+          "class": "uni.fvv.packageManager.UniPackageManager"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "Sip",
+          "class": "com.kunlun.talk.Sip"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Sip-Preview",
+          "class": "com.kunlun.talk.Preview"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Sip-Remote",
+          "class": "com.kunlun.talk.Remote"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "CrashHandle",
+          "class": "publib.utils.CrashHandle"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "Photograph",
+          "class": "com.kunlun.Photograph"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Photo-Preview",
+          "class": "com.kunlun.Preview"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "Temperature",
+          "class": "com.kunlun.temperature.Temperature"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "DoubleDisplays",
+          "class": "com.gk.base.DoubleDisplays"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "card-module",
+          "class": "com.kunlun.card.CardManager"
+        }
+      ],
+      "abis": [
+        "armeabi-v7a"
+      ]
+    },
+    {
+      "plugins": [{
+        "type": "module",
+        "name": "peakfire-nexus_SystemModule",
+        "class": "com.peakfire.nexus.SystemModule"
+      }, {
+        "type": "module",
+        "name": "peakfire-nexus_ThermometryModule",
+        "class": "com.peakfire.nexus.ThermometryModule"
+      }, {
+        "type": "module",
+        "name": "peakfire-nexus_NfcModule",
+        "class": "com.peakfire.nexus.NfcModule"
+      },
+        {
+          "type": "module",
+          "name": "peakfire-nexus_FingerPrintModule",
+          "class": "com.peakfire.nexus.FingerPrintModule"
+        }
+      ],
+      "parameters": {
+        "appid_android": {
+          "des": "123456",
+          "key": "123456"
+        },
+        "appkey_android": {
+          "des": "123456",
+          "key": "123456"
+        }
+      }
+    },
+    {
+      "plugins": [{
+        "type": "module",
+        "name": "peakfire-aio_AioModule",
+        "class": "com.peakfire.aio.AioModule"
+      },{
+        "type": "component",
+        "name": "AioVideoView",
+        "class": "com.peakfire.aio.AioVideoComponent"
+      }],
+      "parameters": {
+        "appid_android": {
+          "des": "234567",
+          "key": "234567"
+        },
+        "appkey_android": {
+          "des": "234567",
+          "key": "234567"
+        }
+      }
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "component",
+          "name": "ijk-video-player",
+          "class": "com.gk.player.ijk.IjkVideoPlayer"
+        }
+      ]
+    }
+  ]
+}

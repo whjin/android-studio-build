@@ -1,0 +1,142 @@
+{
+  "nativePlugins": [
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "GK-Base",
+          "class": "com.gk.base.BaseModule"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "FingerprintModule",
+          "class": "com.kunlun.fingerprint.FingerprintModule"
+        },
+        {
+          "type": "module",
+          "name": "HarUtils",
+          "class": "com.kunlun.har.HarUtils"
+        },
+        {
+          "type": "module",
+          "name": "Utils",
+          "class": "com.kunlun.Utils"
+        }
+      ],
+      "integrateType": "aar",
+      "abis": [
+        "arm64-v8a"
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "component",
+          "name": "node-player",
+          "class": "com.gk.player.NodePlayer"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "GK-UpdateApp",
+          "class": "uni.fvv.packageManager.UniPackageManager"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "Sip",
+          "class": "com.kunlun.talk.Sip"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Sip-Preview",
+          "class": "com.kunlun.talk.Preview"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Sip-Remote",
+          "class": "com.kunlun.talk.Remote"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "CrashHandle",
+          "class": "publib.utils.CrashHandle"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "Photograph",
+          "class": "com.kunlun.Photograph"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "component",
+          "name": "Photo-Preview",
+          "class": "com.kunlun.Preview"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "Temperature",
+          "class": "com.kunlun.temperature.Temperature"
+        }
+      ]
+    },
+    {
+      "hooksClass": "",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "DoubleDisplays",
+          "class": "com.gk.base.DoubleDisplays"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "card-module",
+          "class": "com.kunlun.card.CardManager"
+        }
+      ],
+      "abis": [
+        "armeabi-v7a"
+      ]
+    }
+  ]
+}
